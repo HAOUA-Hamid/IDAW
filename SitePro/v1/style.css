@@ -7,9 +7,9 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-    font-family: sans-serif;
-    background-color: #f2f2f2;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -20,21 +20,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; 
+    position: relative;
     height: 175px;
 }
 
 header h1 {
     margin: 0;
-    position: absolute; 
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
+
 header img {
     position: absolute;
-    right: 20px; 
+    right: 20px;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
 footer {
@@ -43,14 +44,14 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 nav {
     background-color: #f2f2f2;
     padding: 10px;
     justify-content: left;
-    width: 100px;
+    width: 150px;
 }
 
 nav a {
@@ -67,7 +68,7 @@ nav a:hover {
 
 .container {
     display: flex;
-    flex: 1; 
+    flex: 1;
     justify-content: space-between;
 }
 
@@ -76,5 +77,5 @@ nav a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; 
+    flex: 1;
 }
