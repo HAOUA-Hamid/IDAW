@@ -5,40 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-info text-white text-center py-4 position-relative">
         <h1>Mon CV</h1>
-        <img src="image.png" alt="Hamid Haoua" width="100" height="150">
+        <img src="image.png" alt="Hamid Haoua" class="position-absolute end-0 top-50 translate-middle-y" width="100" height="150">
     </header>
-    <div class="container">
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="cv.html">CV</a>
-            <a href="projets.html">Projets</a>
+
+    <div class="container-fluid d-flex flex-grow-1">
+        <nav class="nav flex-column bg-light p-3 border-end">
+            <a href="index.html" class="nav-link ">Accueil</a>
+            <a href="cv.html" class="nav-link active">CV</a>
+            <a href="projets.html" class="nav-link ">Projets</a>
         </nav>
-        <div class="content">
-            <h2>Informations Personnelles</h2>
-            <p><strong>Nom:</strong> HAOUA Hamid</p>
-            <p><strong>Email:</strong> hamid.haoua@etu.imt-nord-europe.fr</p>
-            <p><strong>GitHub:</strong> <a href="http://github.com/HAOUA-Hamid">github.com/HAOUA-Hamid</a></p>
 
-            <h2>Expérience Professionnelle</h2>
-            <ul>
-                <li><strong>Stage Technique - Observatoire National de la Recherche Scientifique et Technologique</strong> (Rabat, Maroc, Mai - Septembre 2024) - Développement d'une application décentralisée avec API sécurisée et intégration de Machine Learning.</li>
-                <li><strong>Projet Ansible Playbook</strong> (Août 2022) - Automatisation de la collecte et du reporting des logs de réseau.</li>
+        <div class="content p-4 bg-white shadow-sm rounded flex-grow-1">
+            <h2 class="mb-4">Informations Personnelles</h2>
+            <ul class="list-unstyled">
+                <li><strong>Nom:</strong> HAOUA Hamid</li>
+                <li><strong>Email:</strong> hamid.haoua@etu.imt-nord-europe.fr</li>
+                <li><strong>GitHub:</strong> <a href="http://github.com/HAOUA-Hamid">github.com/HAOUA-Hamid</a></li>
             </ul>
 
-            <h2>Formation</h2>
+            <h2 class="mt-4 mb-3">Expérience Professionnelle</h2>
             <ul>
-                <li><strong>Double Diplôme Ingénieur</strong> (2021-2025) - IMT Nord Europe (France) & Académie Internationale Mohammed VI (Maroc)</li>
-                <li><strong>CPGE - TSI</strong> (2019-2021) - Lycée d'Excellence, Benguerir, Maroc</li>
-                <li><strong>Baccalauréat en Sciences Électriques</strong> (2019) - Lycée Youssef Ben Tachfine, Agadir, Maroc - Mention Très Bien</li>
+                <li><strong>Stage Technique</strong> - Observatoire National de la Recherche Scientifique et Technologique (Mai - Septembre 2024)</li>
+                <li><strong>Projet Ansible Playbook</strong> - Automatisation des logs réseau (Août 2022)</li>
             </ul>
 
-            <h2>Compétences Techniques</h2>
+            <h2 class="mt-4 mb-3">Formation</h2>
+            <ul>
+                <li><strong>Double Diplôme Ingénieur</strong> (2021-2025) - IMT Nord Europe et Académie Internationale Mohammed VI</li>
+                <li><strong>CPGE</strong> - Lycée d'Excellence (2019-2021)</li>
+                <li><strong>Baccalauréat</strong> - Mention Très Bien (2019)</li>
+            </ul>
+
+            <h2 class="mt-4 mb-3">Compétences Techniques</h2>
             <ul>
                 <li>Langages: Java, Python, C/C++, PHP, JavaScript, HTML & CSS</li>
                 <li>Frameworks: React, Angular, Springboot, Django</li>
@@ -46,21 +51,24 @@
                 <li>OS: Linux, Windows</li>
             </ul>
 
-            <h2>Langues</h2>
-            <ul>
+            <h2 class="mt-4 mb-3">Langues</h2>
+            <ul class="list-unstyled">
                 <li>Arabe: Natif</li>
                 <li>Français: Courant</li>
                 <li>Anglais: B2+</li>
                 <li>Japonais: Débutant</li>
             </ul>
 
-            <h2>Centres d'Intérêt</h2>
+            <h2 class="mt-4 mb-3">Centres d'Intérêt</h2>
             <p>E-sport, Football, Basketball, Montage vidéo, Lecture de romans et bandes dessinées.</p>
         </div>
     </div>
-    <footer>
+
+    <footer class="bg-info text-white text-center py-3 mt-auto">
         &copy; 2024 Hamid Haoua - Tous droits réservés.
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

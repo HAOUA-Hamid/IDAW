@@ -5,35 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-info text-white text-center py-4 position-relative">
         <h1>Mes Projets</h1>
     </header>
-    <div class="container">
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="cv.html">CV</a>
-            <a href="projets.html">Projets</a>
+
+    <div class="container-fluid d-flex flex-grow-1">
+        <nav class="nav flex-column bg-light p-3 border-end">
+            <a href="index.html" class="nav-link ">Accueil</a>
+            <a href="cv.html" class="nav-link ">CV</a>
+            <a href="projets.html" class="nav-link active">Projets</a>
         </nav>
-        <div class="content">
-            <h2>Projets Académiques</h2>
+
+        <div class="content p-4 bg-white shadow-sm rounded flex-grow-1">
+            <h2 class="mb-4">Projets Académiques</h2>
             <ul>
-                <li><strong>Automatisation des feux de circulation</strong> (2022-2023) - Utilisation d'un capteur LIDAR et de la modélisation YOLOv7 pour l'automatisation des feux de circulation.</li>
-                <li><strong>CHICKEN HOME</strong> (2019-2021) - Automatisation de la gestion de la température dans une ferme de poulets avec Raspberry Pi et Node.js.</li>
+                <li><strong>Automatisation des feux de circulation</strong> - Utilisation de capteurs LIDAR et de la modélisation YOLOv7.</li>
+                <li><strong>CHICKEN HOME</strong> - Automatisation des fermes avec Raspberry Pi et Node.js.</li>
             </ul>
-            <h2>Projets Personnels</h2>
+
+            <h2 class="mt-4 mb-3">Projets Personnels</h2>
             <ul>
-                <li><strong>Application Web Décentralisée</strong> (2024) - Développement d'une application sécurisée avec des API pour l'Observatoire National de la Recherche Scientifique et Technologique.</li>
-                <li><strong>Automatisation avec Ansible</strong> (2022) - Automatisation de la collecte de logs réseau avec Ansible Playbook et envoi automatisé aux administrateurs.</li>
+                <li><strong>Application Web Décentralisée</strong> - Développement d’une application sécurisée avec API.</li>
+                <li><strong>Projet Ansible</strong> - Automatisation des logs réseau avec Ansible.</li>
             </ul>
         </div>
     </div>
-    <footer>
+
+    <footer class="bg-info text-white text-center py-3 mt-auto">
         &copy; 2024 Hamid Haoua - Tous droits réservés.
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

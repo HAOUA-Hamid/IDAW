@@ -33,7 +33,7 @@ header h1 {
 
 header img {
     position: absolute;
-    right: 20px;
+    margin-right: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -53,19 +53,21 @@ nav {
     justify-content: left;
     width: 150px;
 }
-
-nav a {
+.nav-link {
     color: #333;
     text-decoration: none;
     padding: 10px;
     display: block;
 }
 
-nav a:hover {
+.nav-link:hover {
+    color: burlywood;
+}
+.nav-link.active, 
+.nav-link:active {
     background-color: #63ceb3cb;
     color: #fff;
 }
-
 .container {
     display: flex;
     flex: 1;
