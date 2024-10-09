@@ -33,9 +33,10 @@ header h1 {
 
 header img {
     position: absolute;
-    margin-right: 20px;
+    right: 20px; 
     top: 50%;
     transform: translateY(-50%);
+    margin-right: 15px;
 }
 
 footer {
@@ -53,25 +54,33 @@ nav {
     justify-content: left;
     width: 150px;
 }
+
 .nav-link {
     color: #333;
     text-decoration: none;
     padding: 10px;
     display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: burlywood;
+    color: #000;
+    background-color: rgba(99, 206, 179, 0.7);
 }
+
 .nav-link.active, 
 .nav-link:active {
     background-color: #63ceb3cb;
     color: #fff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
 }
+
 .container {
     display: flex;
     flex: 1;
     justify-content: space-between;
+    padding: 20px; 
 }
 
 .content {
@@ -80,4 +89,9 @@ nav {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+}
+.langues {
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 1000px;
 }
