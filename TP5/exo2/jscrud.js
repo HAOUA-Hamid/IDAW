@@ -58,6 +58,7 @@ function submitForm(event) {
                 $('#userTable').DataTable().ajax.reload();
                 resetForm();  
             },
+
             error: function() {
                 alert('Failed to add user');
             }
