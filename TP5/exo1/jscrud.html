@@ -21,6 +21,22 @@
             <label for="inputPrenom">Prénom: </label>
             <input type="text" id="inputPrenom">
         </div>
+        <div class="form-group">
+            <label for="inputDate">Date de Naissance: </label>
+            <input type="date" id="inputDate">
+        </div>
+        <div class="form-group">
+            <label for="inputCours">J'aime le cours WEB: </label>
+            <input type="radio" id="inputOui" name="cours" value="oui">
+            <label for="inputOui">Oui</label>
+            <input type="radio" id="inputNon" name="cours" value="non">
+            <label for="inputNon">Non</label>
+        </div>
+        
+        <div class="form-group">
+            <label for="inputRemarque">Remarque: </label>
+            <input type="text" id="inputRemarque">
+        </div>
         <button type="submit">Submit</button>
         <button type="button" onclick="resetForm()">Cancel</button>
     </form>
@@ -30,6 +46,9 @@
             <tr>
                 <th>Nom</th>
                 <th>Prénom</th>
+                <th>Date de Naissance</th>
+                <th>J'aime le cours WEB</th>
+                <th>Remarque</th>
                 <th>Actions</th>
             </tr>
         </thead>
