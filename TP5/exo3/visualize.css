@@ -1,0 +1,31 @@
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2;
+}
+.axis-label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.dot {
+    fill: steelblue;
+    stroke: white;
+    stroke-width: 2;
+}
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    background: lightsteelblue;
+    border-radius: 4px;
+    pointer-events: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    border: 1px solid #ccc;
+}
