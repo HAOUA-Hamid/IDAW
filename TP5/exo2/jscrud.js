@@ -1,7 +1,8 @@
+let preFix = 'http://localhost:8080/IDAW/TP4/exo5/api/';
 $(document).ready(function() {
     $('#userTable').DataTable({
         ajax: {
-            url: 'http://localhost:8080/IDAW/TP4/exo5/api/users.php',  
+            url: `${preFix}users.php`,  
             dataSrc: ''  
         },
         columns: [
@@ -20,7 +21,6 @@ $(document).ready(function() {
     });
 });
 
-
 let selectedUserId = null;
 
 
@@ -34,7 +34,7 @@ function submitForm(event) {
 
     if (selectedUserId) {
         $.ajax({
-            url: `http://localhost:8080/IDAW/TP4/exo5/api/users.php?id=${selectedUserId}`, 
+            url: `${preFix}users.php?id=${selectedUserId}`, 
             method: 'PUT', 
             contentType: 'application/json',
             data: JSON.stringify(formData),
@@ -49,7 +49,7 @@ function submitForm(event) {
         });
     } else {
         $.ajax({
-            url: 'http://localhost:8080/IDAW/TP4/exo5/api/users.php',  
+            url: `${preFix}users.php`,  
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(formData),
@@ -68,7 +68,7 @@ function submitForm(event) {
 
 function editUser(id) {
     $.ajax({
-        url: `http://localhost:8080/IDAW/TP4/exo5/api/users.php?id=${id}`,
+        url: `${preFix}users.php?id=${id}`,
         method: 'GET',
         success: function(user) {
             $('#inputName').val(user.name);
@@ -84,7 +84,7 @@ function editUser(id) {
 function deleteUser(id) {
     if (confirm('Are you sure you want to delete this user?')) {
         $.ajax({
-            url: `http://localhost:8080/IDAW/TP4/exo5/api/users.php?id=${id}`,  
+            url: `${preFix}users.php?id=${id}`,  
             method: 'DELETE',  
             success: function() {
                 alert('User deleted successfully');
